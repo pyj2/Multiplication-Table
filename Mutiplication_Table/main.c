@@ -27,6 +27,8 @@ int main() {
 
     if (!validate_input(start, end)) {
         printf("잘못된 입력입니다. 1~9 범위의 값을 올바르게 입력하세요.\n");
+        printf("프로그램을 종료합니다.\n");
+
         return 1;
     }
 
