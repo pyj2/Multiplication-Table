@@ -1,0 +1,11 @@
+.vs/
+*.exe
+*.obj
+*.sln
+Debug/
+Release/
+bin/
+ipch/
+*.vcxproj
+*.vcxproj.filters
+*.user
