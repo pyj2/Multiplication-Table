@@ -3,6 +3,8 @@
 int main() {
     int start, end;
     printf("시작 단과 끝 단을 입력하세요: ");
+    // 예: 시작 단과 끝 단을 입력하세요: 2 5
+    // 2단부터 5단까지 출력됩니다.
     scanf_s("%d %d", &start, &end);
 
     if (start < 1 || end > 9 || start > end) {
