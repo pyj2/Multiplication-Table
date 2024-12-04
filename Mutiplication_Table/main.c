@@ -25,7 +25,7 @@ void print_ordered_table(int order) {
             for (int j = 1; j <= 9; j++) {
                 printf("%2d x %2d = %2d\n", i, j, i * j);
             }
-            printf("----------------------\n"); 
+            printf("----------------------\n");
         }
     }
     else if (order == 2) { // 내림차순 출력
@@ -44,7 +44,7 @@ void print_ordered_table(int order) {
 
 int main() {
     int mode;
-    printf("모드를 선택하세요 (1: 범위 출력, 2: 순서 출력): ");
+    printf("모드를 선택하세요 (1: 범위 출력, 2: 특정 단 출력, 3: 순서 출력): ");
     scanf_s("%d", &mode);
 
     if (mode == 1) {
@@ -72,6 +72,23 @@ int main() {
         print_table(start, end);
     }
     else if (mode == 2) {
+        int specific_table;
+
+        // 특정 단만 출력
+        printf("출력할 구구단을 입력하세요 (1 ~ 9): ");
+        scanf_s("%d", &specific_table);
+
+        if (specific_table >= 1 && specific_table <= 9) {
+            printf("==== %d 단 ====\n", specific_table);
+            for (int j = 1; j <= 9; j++) {
+                printf("%2d x %2d = %2d\n", specific_table, j, specific_table * j);
+            }
+        }
+        else {
+            printf("잘못된 입력입니다. 1에서 9 사이의 숫자를 입력하세요.\n");
+        }
+    }
+    else if (mode == 3) {
         int order;
 
         // 순서 출력 모드
