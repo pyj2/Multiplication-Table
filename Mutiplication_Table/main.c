@@ -11,7 +11,7 @@ int main() {
             for (int j = 1; j <= 9; j++) {
                 printf("%2d x %2d = %2d\n", i, j, i * j);
             }
-            printf("\n");
+            printf("----------------------\n"); 
         }
     }
     else if (order == 2) { // 내림차순 출력
@@ -20,7 +20,7 @@ int main() {
             for (int j = 1; j <= 9; j++) {
                 printf("%2d x %2d = %2d\n", i, j, i * j);
             }
-            printf("\n");
+            printf("----------------------\n");
         }
     }
     else {
